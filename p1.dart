@@ -1,8 +1,4 @@
 // Practice Questions:
-
-// P1. Ask the user for a string and print out whether this string is a palindrome or not.
-// P2. Generate a random number between 1 and 100. Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right.
-// P3. Write a program that asks the user how many Fibonnaci numbers to generate and then generates them.
 // P4. Write a program that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates.
 // P5. Write a program that asks the user for a long string containing multiple words. Print back to the user the same string, except with the words in backwards order.
 
@@ -13,32 +9,9 @@ void main() {
   //palindrome();
   //random();
   //Fibonnaci();
-
-  int randomNum = Random().nextInt(100);
-  print(randomNum);
-  print("Enter a random number");
-
-  try {
-    String? val = stdin.readLineSync();
-
-    var num = int.parse(val!);
-
-    print('Entered value: $num');
-
-    if (num > randomNum) {
-      print("Too high");
-    } else if (num < randomNum) {
-      print("Too low");
-    } else if (num == randomNum) {
-      print("your guess is correct");
-    }
-
-    print("The random number generated was: $randomNum");
-  } catch (e) {
-    print("invalid input");
-  }
 }
 
+// P1. Ask the user for a string and print out whether this string is a palindrome or not.
 void palindrome() {
   print('enter a word');
 
@@ -56,6 +29,7 @@ void palindrome() {
   print(ans);
 }
 
+// P2. Generate a random number between 1 and 100. Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right.
 void random() {
   int randomNum = Random().nextInt(100);
   print(randomNum);
@@ -82,6 +56,7 @@ void random() {
   }
 }
 
+// P3. Write a program that asks the user how many Fibonnaci numbers to generate and then generates them.
 void Fibonnaci() {
   print("Enter the number of fibonnaci numbers to generate");
 

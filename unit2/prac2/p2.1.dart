@@ -1,24 +1,22 @@
 class Vehicle {
   String? model;
   int? Make;
-  get getModel => this.model;
-
-  set setModel(model) => this.model = model;
-
-  get getMake => this.Make;
-
-  set setMake(Make) => this.Make = Make;
-
-  Vehicle({requiredmodel, Make}) {
+  Vehicle(model, Make) {
     this.model = model;
     this.Make = Make;
   }
 }
 
-class Car extends Vehicle {}
+class Car extends Vehicle {
+  Car(String model, int Make) : super(model, Make);
+}
 
-class Truck extends Vehicle {}
+class Truck extends Vehicle {
+  Truck(String model, int Make) : super(model, Make);
+}
 
 class SportsCar extends Car {
-  int? topSpeed;
+  double? topSpeed;
+
+  SportsCar(String model, int Make, this.topSpeed) : super(model, Make);
 }

@@ -1,0 +1,4 @@
+Below is the question for lab evaluation:
+
+2. You are developing a music streaming application. Define an abstract class MediaItem representing various media items such as songs, albums, and playlists. Implement concrete classes Song, Album, and Playlist that extend the MediaItem class. Additionally, create an interface Playable with a method play() that must be implemented by all media items.
+Create a Logger mixin that provides logging functionality to classes in your application. The Logger mixin should include methods for logging debug, info, warning, and error messages. Implement this mixin in various classes throughout your application to enable logging functionality wherever needed.

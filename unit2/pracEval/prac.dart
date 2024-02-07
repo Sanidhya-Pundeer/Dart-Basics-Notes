@@ -1,7 +1,5 @@
 abstract class MediaItem {
   String? Name;
-  // List<String> Playlist = [];
-  // List<String> Albums = [];
 }
 
 class Song with Logger implements MediaItem, Playable {
